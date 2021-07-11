@@ -31,7 +31,7 @@ img {
 }
 
 p.message {
-    color: red;
+    color: rgb(62, 12, 201);
     text-align: center;
     margin-top: 0;
 }
@@ -56,7 +56,7 @@ p.message {
 .btn {
     border-radius: 12px;
     width: 60%;
-    background: #FE1F00;
+    background: #1d079e;
     color: #fff;
     padding: 10px 20px;
     border: none;
