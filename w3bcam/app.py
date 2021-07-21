@@ -27,7 +27,7 @@ def submit():
         if password == 'testing123':
             return render_template('stream_static.html')
         else:
-            return render_template('home.html', message='wrong or empty password')
+            return render_template('home.html', message='wrong or empty password') #this is bad
 
 
 @app.route("/stream", methods=['POST'])
