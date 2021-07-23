@@ -22,12 +22,13 @@ def home():
 
 @app.route("/submit", methods=['POST'])
 def submit():
+    form = SubmitForm()
     if request.method == 'POST':
         password = request.form['password']
         if password == 'testing123':
             return render_template('stream_static.html')
         else:
-            return render_template('home.html', message='wrong or empty password') #this is bad
+            return render_template('home.html', form = form, message = 'wrong password')
 
 
 @app.route("/stream", methods=['POST'])
